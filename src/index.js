@@ -1,6 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import TestCompnent from "./Poil";
+import App from "./App";
 
-ReactDOM.render(<TestCompnent />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
+
+// // Example usage of FetchRandomMovie function
+// FetchRandomMovie().then((movie) => {
+//   if (movie) {
+//     console.log("Random movie:", movie);
+//   } else {
+//     console.log("Failed to fetch a random movie.");
+//   }
+// });
