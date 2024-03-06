@@ -1,0 +1,38 @@
+  * {
+    color: black;
+  }
+
+  body  {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .BigPurpuseAwser  {
+    font-size: 14px;
+    background-color: blueviolet;
+    height: 20vh;
+    width: 24vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+
+  .QuizSection {
+    height: 75vh;
+    width: 75vw;
+    border: 1px red solid;
+    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    position: relative;
+  }
