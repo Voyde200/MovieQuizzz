@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import fetchRandomMovie from "./DbFilm";
-
+import randomQuestion from "./DbQuestion";
 function App() {
   const [randomMovie, setRandomMovie] = useState(null);
 
