@@ -10,23 +10,12 @@ const fetchRandomMovie = async () => {
     const response = await axios.get("https://www.omdbapi.com/", {
       params: {
         s: "kill",
-        page: 50,
         apikey: "8683c210",
       },
     });
-    // const response = await axios.get("http://www.omdbapi.com/", {
-    //   params: {
-    //     apikey: "8683c210",
-    //     type: "movie", // Search for movies only
-    //     r: "json", // Response format
-    //   },
-    // });
-
     // Get a random movie from the response
-    console.log(response.data);
     const randomIndex = Math.floor(Math.random() * response.data.Search.length);
     const randomMovie = response.data.Search[randomIndex];
-    console.log("Pute");
     return randomMovie;
   } catch (error) {
     console.error("Error fetching random movie:", error);
@@ -34,5 +23,22 @@ const fetchRandomMovie = async () => {
   }
 };
 
-// Export the fetchRandomMovie function
-export default fetchRandomMovie;
+// Function to fetch and log multiple random movies
+const fetchAndLogRandomMovies = async (count) => {
+  try {
+    const fetchedTitles = []; // Array to store fetched movie titles
+    for (let i = 0; i < count; i++) {
+      const randomMovie = await fetchRandomMovie();
+      fetchedTitles.push(randomMovie.Title); // Push the title to the array
+    }
+    console.log("Fetched Titles:", fetchedTitles); // Log the array of titles
+  } catch (error) {
+    console.error("Error fetching random movies:", error);
+  }
+};
+
+// Export the fetchAndLogRandomMovies function
+export default fetchAndLogRandomMovies;
+
+// Call the function to fetch and log two random movies with the keyword "kill"
+fetchAndLogRandomMovies(3); // Fetch three movies instead of two
