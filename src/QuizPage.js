@@ -1,9 +1,13 @@
+import Button from "./CompenentMain.js";
 import BigPurpuseAwser from "./PurpuseAwser.js";
 import Headline from "./QuizQuestionHead.js";
+import SubmitButton from "./CompenentMain.js";
+
+// Page displaying the game, import Headline, Quiz Section and Submit button.
 
 function QuizSection() {
     return (
-        <section>
+        <section className="allContentSection">
         <div>
             <Headline />
         </div>
@@ -13,6 +17,7 @@ function QuizSection() {
             <BigPurpuseAwser />
             <BigPurpuseAwser />
         </div>
+        < SubmitButton />
         </section>
     );
   }

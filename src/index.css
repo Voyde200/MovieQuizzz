@@ -1,18 +1,66 @@
   body  {
     height: 100vh;
     width: 100vw;
-    /*overflow: hidden;*/
+    overflow: hidden;
     background-color: #f8f8f8;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .allContentSection  {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 40px 0px;
   }
-  
+
+  /*HEADLINE STYLE*/
+
+  .Headline_Section {
+    height: 20vh;
+    width: 100vw;
+    /* border: 3px blue solid; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.SubT-presentation {
+    color: black;
+    font-family: "Be Vietnam Pro-Bold", Helvetica;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.Headline_Section .Title-MovieName {
+    color: #013da5;
+    font-weight: bold;
+    font-family: "Be Vietnam Pro-Bold", Helvetica;
+    font-size: 54px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+}
+
+/*QUIZ SECTION STYLE*/
+
   .BigPurpuseAwser  {
     background-color: #013DA5;
     height: 100px;
-    width: 24vw;
+    width: 36%;
     border-radius: 10px;
+    letter-spacing: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -25,54 +73,23 @@
       font-size: 32px;
       font-weight: 700;
       letter-spacing: 0;
-      line-height: 50.4px;
+      line-height: 40.4px;
       top: 0;
   }
 
   .QuizSection {
-    height: 70vh;
-    border: 1px red solid;
+    height: auto;
+    min-width: 80vw;
+    min-height: 50%;
+    /* border: 1px red solid; */
     align-items: flex-start;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 11px 150px;
+    gap: 20px 4%;
     flex-wrap: wrap;
     position: relative;
   }
 
-  .Headline_Section {
-    border: 2px blue solid;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    justify-content: center;
-    position: relative;
-}
 
-.Headline_Section .SubT-presentation {
-    color: #101016;
-    font-family: "Be Vietnam Pro-SemiBold", Helvetica;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: normal;
-    margin-top: -1px;
-    position: relative;
-    text-align: center;
-    width: fit-content;
-}
-
-.Headline_Section .Title-MovieName {
-    align-self: stretch;
-    color: #013da5;
-    font-family: "Be Vietnam Pro-Bold", Helvetica;
-    font-size: 54px;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: normal;
-    position: relative;
-    text-align: center;
-}
 
