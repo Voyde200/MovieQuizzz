@@ -24,6 +24,8 @@ const fetchRandomMovie = async () => {
   }
 };
 
+const taRace = async () => {};
+
 // Function to fetch and log multiple random movies
 const fetchAndLogRandomMovies = async (count) => {
   try {
@@ -33,13 +35,14 @@ const fetchAndLogRandomMovies = async (count) => {
       fetchedTitles.push(randomMovie.Title); // Push the title to the array
     }
     console.log("Fetched Titles:", fetchedTitles); // Log the array of titles
+    return fetchedTitles;
   } catch (error) {
     console.error("Error fetching random movies:", error);
   }
 };
 
+// Call the function to fetch and log two random movies with the keyword "kill"
+// fetchAndLogRandomMovies(3); // Nique ta mère, arrête de copier du code de chat GPT sans comprendre, ça me tilte
+
 // Export the fetchAndLogRandomMovies function
 export default fetchAndLogRandomMovies;
-
-// Call the function to fetch and log two random movies with the keyword "kill"
-fetchAndLogRandomMovies(3); // Fetch three movies instead of two
