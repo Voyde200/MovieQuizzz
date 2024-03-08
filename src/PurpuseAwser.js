@@ -1,10 +1,7 @@
 export default function Profile() {
     return (
         <div className="BigPurpuseAwser">
-            <img
-                src="null"
-                alt="Image du Film"
-            />
+            <h3>Le nom du film</h3>
         </div>
     )
   }
