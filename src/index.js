@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import QuizDisplay from "./QuizPage";
 import "./index.css";
-import TestCompnent from "./Poil";
+import AppJS from "./App";
 
-ReactDOM.render(<TestCompnent />, document.getElementById("root"));
+
+ReactDOM.render(<AppJS />, document.getElementById("root"));
