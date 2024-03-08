@@ -4,7 +4,6 @@ import randomQuestion from "./DbQuestion";
 import fetchedTitles from "./DbFilm";
 import QuizView from "./QuizPage";
 
-
 function App() {
   const [randomisedAnswer, setRandomisedAnswer] = useState([]);
 
@@ -15,11 +14,8 @@ function App() {
       console.log("fetched movie", movie);
       movie.push(randomQuestion[1]);
       console.log(movie);
-      movie = movie.slice().sort(
-        () => Math.random() - 0.5
-        );
-        console.log(movie);
-
+      movie = movie.slice().sort(() => Math.random() - 0.5);
+      console.log(movie);
 
       setRandomisedAnswer(movie);
 
@@ -28,13 +24,12 @@ function App() {
     });
   }, []);
 
-
-console.log(randomisedAnswer);
+  console.log(randomisedAnswer);
   return (
     <section>
-      < QuizView  answerQuiz={randomisedAnswer} />;
+      <QuizView answerQuiz={randomisedAnswer} />;
     </section>
- );
+  );
 }
 
 export default App;

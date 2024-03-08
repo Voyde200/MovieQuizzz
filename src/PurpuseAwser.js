@@ -3,10 +3,10 @@
 import randomMovie from "./App";
 
 export default function Profile(props) {
-    const {answerQuiz} = props
-    return (
-        <div className="BigPurpuseAwser">
-            <h3> {props} </h3>
-        </div>
-    )
-  }
+  const { individualAnswer } = props;
+  return (
+    <div className="BigPurpuseAwser">
+      <h3> {individualAnswer} </h3>
+    </div>
+  );
+}

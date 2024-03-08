@@ -86,6 +86,5 @@ var randomIndex = Math.floor(Math.random() * QuestionList.length);
 var randomQuestion = QuestionList[randomIndex];
 
 // Now, randomQuestion contains a random array from QuestionList
-console.log("Goulu");
 console.log(randomQuestion);
 export default randomQuestion;
