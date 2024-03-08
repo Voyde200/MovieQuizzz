@@ -21,18 +21,17 @@ function App() {
         console.log(movie);
 
 
-      setRandomisedAnswer(randomisedAnswer => {for(let movieIndex=0; movieIndex < movie.length; movieIndex++){
-        randomisedAnswer.push(movie[movieIndex])
-      }});
+      setRandomisedAnswer(movie);
 
       //Creation of the randomized array with the 4 answers, including the right
       console.log("Randomiser", randomisedAnswer);
     });
   }, []);
 
+
+console.log(randomisedAnswer);
   return (
     <section>
-      <div>{randomisedAnswer} </div>
       < QuizView  answerQuiz={randomisedAnswer} />;
     </section>
  );

@@ -9,15 +9,14 @@ function QuizSection(props) {
     const {answerQuiz} = props
     return (
         <section className="allContentSection">
-            <div>{answerQuiz}</div>
         <div>
             <Headline />
         </div>
         <div className="QuizSection">
-            <BigPurpuseAwser />
-            <BigPurpuseAwser />
-            <BigPurpuseAwser />
-            <BigPurpuseAwser />
+            <BigPurpuseAwser props={answerQuiz}/>
+            <BigPurpuseAwser props={answerQuiz}/>
+            <BigPurpuseAwser props={answerQuiz}/>
+            <BigPurpuseAwser props={answerQuiz}/>
         </div>
         < SubmitButton />
         </section>
