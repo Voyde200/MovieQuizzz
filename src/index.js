@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import BigPurpuseAwser from "./PurpuseAwser.js";
-import QuizPage from "./QuizPage.js";
+import TestCompnent from "./Poil";
 
-ReactDOM.render(<QuizPage />, document.getElementById("root"));
+ReactDOM.render(<TestCompnent />, document.getElementById("root"));
