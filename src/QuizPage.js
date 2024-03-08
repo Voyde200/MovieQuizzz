@@ -5,9 +5,11 @@ import SubmitButton from "./CompenentMain.js";
 
 // Page displaying the game, import Headline, Quiz Section and Submit button.
 
-function QuizSection() {
+function QuizSection(props) {
+    const {answerQuiz} = props
     return (
         <section className="allContentSection">
+            <div>{answerQuiz}</div>
         <div>
             <Headline />
         </div>

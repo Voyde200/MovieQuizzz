@@ -30,22 +30,10 @@ function App() {
     });
   }, []);
 
-  
-
-  // const WrongMovies = () => {
-  //   if (typeof randomMovie == "object") {
-  //     const allMovies = randomMovie.map((movie, index) => {
-  //       // HTML code created for each movie found
-  //       return <h2 key={index}>{movie}</h2>;
-  //     });
-  //     return <div>{allMovies}</div>;
-  //   }
-  //   return <div></div>;
-  // };
   return (
     <section>
       <div>{randomisedAnswer} </div>
-      < QuizView  AnswerQuiz={randomisedAnswer} />;
+      < QuizView  answerQuiz={randomisedAnswer} />;
     </section>
  );
 }
