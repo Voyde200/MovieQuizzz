@@ -7,7 +7,6 @@ import QuizView from "./QuizPage";
 
 function App() {
   const [randomisedAnswer, setRandomisedAnswer] = useState([]);
-
   useEffect(() => {
     // Fetch a random movie when the component mounts
     fetchRandomMovie(3).then((movie) => {
@@ -48,6 +47,7 @@ function App() {
       < QuizView  AnswerQuiz={randomisedAnswer} />;
     </section>
  );
+
 }
 
 export default App;
